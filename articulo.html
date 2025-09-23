@@ -1,47 +1,28 @@
-<!doctype html><html lang="es"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Titre de l'article — King Ghetto HT</title>
-<link rel="icon" href="assets/favicon.png"/>
-<link rel="stylesheet" href="css/styles.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-<style>.article{max-width:860px;margin:0 auto}.article h1{font-size:34px;margin:0 0 10px}.article .meta{color:#9b9bb0;margin-bottom:16px}.article img{width:100%;border-radius:12px;margin:12px 0}.article p{color:#cfcfda;line-height:1.6}.share{display:flex;gap:10px;margin-top:12px}.share a{padding:8px 12px;border:1px solid #2a2a36;border-radius:8px;color:#d7d7e5}</style>
-</head><body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo — King Ghetto HT</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<!-- pega el mismo HEADER de index.html -->
+<header>... (mismo bloque que index) ...</header>
 
-<header>
-  <nav class="container nav">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="King Ghetto HT logo" />
-      <div class="title">King Ghetto HT</div>
-    </div>
-    <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
-    <div id="navLinks" class="nav-links">
-      <a href="index.html#musica">Musique</a>
-      <a href="index.html#videos">Vidéos</a>
-      <a href="index.html#galeria">Galerie</a>
-      <a href="noticias.html">Nouvelles</a>
-      <a href="index.html#sobre-mi">Sur moi</a>
-      <a href="index.html#contacto">Contact</a>
-      <a class="btn btn-primary" href="tienda.html">Boutique</a>
-      <div class="header-socials" aria-label="Redes">
-        <a href="#" aria-label="YouTube"><img src="assets/icon-youtube.svg" alt="YouTube"></a>
-        <a href="#" aria-label="Spotify"><img src="assets/icon-spotify.svg" alt="Spotify"></a>
-        <a href="#" aria-label="Apple Music"><img src="assets/icon-apple.svg" alt="Apple Music"></a>
-        <a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
-        <a href="#" aria-label="TikTok"><img src="assets/icon-tiktok.svg" alt="TikTok"></a>
-      </div>
-      <a class="btn btn-outline" href="donaciones.html">Dons</a>
-    </div>
-  </nav>
-</header>
+<article class="container article">
+  <h1>Título del artículo</h1>
+  <div class="meta">Publicado el 23 Sep 2025 · Por King Ghetto HT</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus, odio non porta placerat, urna neque faucibus arcu, non dictum purus magna non mi.</p>
+  <p>Más contenido aquí. Puedes duplicar este archivo y enlazarlo desde la página de noticias.</p>
+</article>
 
-<section class="container section article">
-  <h1>Titre de l'article</h1>
-  <div class="meta">Categoría · 2025-09-22 · Auteur: King Ghetto HT</div>
-  <img src="assets/product_4.jpg" alt="Imagen del artículo">
-  <p>Escribe aquí tu noticia. Puedes incluir enlaces, listas y fotos. Mantén los párrafos cortos y añade subtítulos si es un texto largo.</p>
-  <p>Consejo: al final, enlaza a tu música o a la tienda para convertir tráfico.</p>
-  <div class="share"><a href="noticias.html">← Volver a Noticias</a><a href="#">Compartir</a></div>
-</section>
-<footer><div class="container"><div class="socials"><a href="index.html">Première page</a><a class="btn btn-outline" href="tienda.html">Boutique</a></div><div style="margin-top:12px"><small class="muted">© 2025 King Ghetto HT</small></div></div></footer>
-<script src="js/main.js"></script></body></html>
+<footer>
+  <div class="container row">
+    <div>© King Ghetto HT — Todos los derechos reservados</div>
+    <div><a href="/noticias.html" style="color:#cfd1dd;text-decoration:none">Noticias</a> · <a href="/donaciones.html" style="color:#cfd1dd;text-decoration:none">Donaciones</a></div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+</body>
+</html>
