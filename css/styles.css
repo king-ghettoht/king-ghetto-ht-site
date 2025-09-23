@@ -8,7 +8,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.8);backdrop-fi
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:12px}.brand img{width:44px;height:44px}.brand .title{font-weight:900;letter-spacing:.5px}
 .nav-links{display:flex;gap:18px;align-items:center}.nav-links a{padding:8px 10px;border-radius:8px}.nav-toggle{display:none}
-/* Header socials — sin tinte, respeta el color del SVG */
+/* Header socials — sin tinte sobre el icono */
 .header-socials{
   display:flex;
   gap:10px;
@@ -16,36 +16,30 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.8);backdrop-fi
   margin-right:10px;
 }
 
+/* Mantén tu fondo/borde, pero NO coloques color al link */
 .header-socials a{
   display:inline-flex;
-  width:28px;          /* sube a 36/44 si los quieres más grandes */
+  width:28px;
   height:28px;
   align-items:center;
   justify-content:center;
-  border:1px solid #2a2a36;  /* tu borde/fondo de abajo se queda */
+  border:1px solid #2a2a36;
   border-radius:8px;
   padding:4px;
-  background:transparent;     /* nada encima del icono */
-  color:inherit !important;   /* NO pintamos el SVG por color del link */
+  background:transparent;         /* nada encima del SVG */
+  color:inherit !important;       /* evita teñir el SVG */
   transition:transform .15s ease;
 }
 .header-socials a:hover{ transform:translateY(-1px); }
 
-.header-socials img,
+/* Icono: tamaño cómodo y sin mezclas raras */
 .header-socials svg{
-  width:18px;  /* sube a 20–24 si quieres más presencia */
-  height:18px;
+  width:20px;   /* súbelo a 22–24 si lo quieres más grande */
+  height:20px;
   display:block;
-  /* defensivo: elimina “suciedad” visual si hay estilos globales */
   filter:none !important;
   mix-blend-mode:normal !important;
 }
-
-/* MUY IMPORTANTE:
-   Asegúrate de NO tener en otro lado algo como:
-   .header-socials svg { fill: currentColor; }
-   Si existe, bórralo. Esa regla es la que “tiñe” el icono. */
-
 .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 20% -10%, rgba(78,161,255,.25), transparent), radial-gradient(1000px 600px at 80% 10%, rgba(245,197,66,.2), transparent)}
 .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:64px 0}
 .hero h1{font-size:48px;line-height:1.05;margin:0 0 10px;font-weight:900;letter-spacing:.5px}
