@@ -8,35 +8,24 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.8);backdrop-fi
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:12px}.brand img{width:44px;height:44px}.brand .title{font-weight:900;letter-spacing:.5px}
 .nav-links{display:flex;gap:18px;align-items:center}.nav-links a{padding:8px 10px;border-radius:8px}.nav-toggle{display:none}
-/* Header socials — sin tinte sobre el icono */
-.header-socials{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  margin-right:10px;
+/* Header socials — real brand, sin tintes */
+.header-socials{ display:flex; align-items:center; gap:10px; margin-right:10px; }
+.header-socials .soc{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:36px; height:36px; padding:4px;
+  border:1px solid #2a2a36; border-radius:8px;
+  background:transparent; /* tu “fondo de abajo” se mantiene si lo tienes */
+  line-height:0; transition:transform .15s ease;
 }
+.header-socials .soc:hover{ transform:translateY(-1px); }
 
-/* Mantén tu fondo/borde, pero NO coloques color al link */
-.header-socials a{
-  display:inline-flex;
-  width:28px;
-  height:28px;
-  align-items:center;
-  justify-content:center;
-  border:1px solid #2a2a36;
-  border-radius:8px;
-  padding:4px;
-  background:transparent;         /* nada encima del SVG */
-  color:inherit !important;       /* evita teñir el SVG */
-  transition:transform .15s ease;
-}
-.header-socials a:hover{ transform:translateY(-1px); }
+/* Tamaño del ícono y limpieza de efectos globales */
+.header-socials .soc svg{ width:22px; height:22px; display:block; filter:none !important; mix-blend-mode:normal !important; }
 
-/* Icono: tamaño cómodo y sin mezclas raras */
-.header-socials svg{
-  width:20px;   /* súbelo a 22–24 si lo quieres más grande */
-  height:20px;
-  display:block;
+/* MUY IMPORTANTE: no impongas color al SVG */
+.header-socials .soc svg, 
+.header-socials .soc svg *{ stroke:none; }
+
   filter:none !important;
   mix-blend-mode:normal !important;
 }
