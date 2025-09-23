@@ -1,13 +1,28 @@
-<!doctype html><html lang="es"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>King Ghetto HT — Sitio Oficial</title>
-<link rel="icon" href="assets/favicon.png"/><link rel="stylesheet" href="css/styles.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-<meta name="description" content="Página oficial de King Ghetto HT: música urbana, Rap y drill.">
-<meta property="og:title" content="King Ghetto HT — Sitio Oficial"><meta property="og:type" content="website">
-<meta property="og:image" content="assets/favicon.png">
-</head><body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>King Ghetto HT — Sitio Oficial</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.png"/>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- Metadatos -->
+  <meta name="description" content="Página oficial de King Ghetto HT: música urbana, rap y drill.">
+  <meta property="og:title" content="King Ghetto HT — Sitio Oficial">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/favicon.png">
+</head>
+<body>
 
 <header>
   <nav class="container nav">
@@ -15,110 +30,171 @@
       <img src="assets/logo.svg" alt="King Ghetto HT logo" />
       <div class="title">King Ghetto HT</div>
     </div>
+
     <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
+
     <div id="navLinks" class="nav-links">
-      <a href="index.html#musica">Musique</a>
-      <a href="index.html#videos">Vidéos</a>
-      <a href="index.html#galeria">Galerie</a>
-      <a href="noticias.html">Nouvelles</a>
-      <a href="index.html#sobre-mi">Sur moi</a>
-      <a href="index.html#contacto">Contact</a>
-      <a class="btn btn-primary" href="tienda.html">Magasin</a>
+      <a href="#musica">Música</a>
+      <a href="#videos">Videos</a>
+      <a href="#galeria">Galería</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-primary" href="tienda.html">Tienda</a>
+
+      <!-- Redes sociales (usando tus enlaces reales) -->
       <div class="header-socials" aria-label="Redes">
-  <!-- YouTube (rojo + triángulo blanco) -->
-  <a href="https://youtube.com/@TU_CANAL" target="_blank" rel="noopener" aria-label="YouTube" class="soc yt" title="YouTube">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <rect x="1.5" y="5" width="21" height="14" rx="3" fill="#FF0000"/>
-      <path d="M10 9v6l6-3-6-3z" fill="#FFFFFF"/>
-    </svg>
-  </a>
+        <a href="https://www.youtube.com/@kingghettoht" aria-label="YouTube">
+          <img src="assets/icon-youtube.svg" alt="YouTube">
+        </a>
+        <a href="https://open.spotify.com/artist/6xxkSVzyG60vXNNEDb1piE?si=V0gJj1qrQXCx1PgCe54VKw" aria-label="Spotify">
+          <img src="assets/icon-spotify.svg" alt="Spotify">
+        </a>
+        <a href="https://music.apple.com/do/artist/king-ghetto-ht/1830944929" aria-label="Apple Music">
+          <img src="assets/icon-apple.svg" alt="Apple Music">
+        </a>
+        <a href="https://www.instagram.com/kingghettoht" aria-label="Instagram">
+          <img src="assets/icon-instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@kingghettoht" aria-label="TikTok">
+          <img src="assets/icon-tiktok.svg" alt="TikTok">
+        </a>
+      </div>
 
-  <!-- Spotify (círculo verde + ondas negras) -->
-  <a href="https://open.spotify.com/artist/TU_ID" target="_blank" rel="noopener" aria-label="Spotify" class="soc sp" title="Spotify">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <circle cx="12" cy="12" r="10.5" fill="#1DB954"/>
-      <path fill="#191414" d="M17.6 15.6a.9.9 0 0 1-1.2.3c-2.6-1.6-6.2-2-10.4-1-.5.1-1-.2-1.1-.6-.1-.5.2-1 .7-1.1 4.7-1.1 8.9-.7 12 1.2.4.2.5.7.3 1.2Zm.3-3.1a1 1 0 0 1-1.3.3c-3-1.8-7.5-2.3-11.1-1.2-.5.2-1-.1-1.2-.6-.1-.5.1-1 .6-1.2 4-1.2 9-0.7 12.5 1.4.5.3.6.9.5 1.3ZM18 9.4a1.1 1.1 0 0 1-1.5.3c-3.3-2-8.9-2.3-12.5-1.3-.6.2-1.1-.2-1.3-.7-.2-.6.2-1.1.8-1.3 4.2-1.2 10.6-.9 14.5 1.5.6.3.7 1 .4 1.5Z"/>
-    </svg>
-  </a>
-
-  <!-- Apple Music (nota rosa) -->
-  <a href="https://music.apple.com/artist/TU_ID" target="_blank" rel="noopener" aria-label="Apple Music" class="soc am" title="Apple Music">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <circle cx="12" cy="12" r="10.5" fill="#FFFFFF"/>
-      <path fill="#FA243C" d="M16 5.5v8.2c0 1.9-1.3 3.5-3.2 3.9-1.8.4-3.3-.6-3.3-2 0-1.4 1.4-2.6 3.2-2.9.5-.1.9-.1 1.3 0V8.3l-5 1.1V6.6l6-1.1h.9z"/>
-    </svg>
-  </a>
-
-  <!-- Instagram (gradiente oficial + cámara blanca) -->
-  <a href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener" aria-label="Instagram" class="soc ig" title="Instagram">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <defs>
-        <linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#F58529"/>
-          <stop offset="50%" stop-color="#DD2A7B"/>
-          <stop offset="100%" stop-color="#515BD4"/>
-        </linearGradient>
-      </defs>
-      <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#igGrad)"/>
-      <circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="2"/>
-      <circle cx="16.7" cy="7.3" r="1.2" fill="#fff"/>
-    </svg>
-  </a>
-
-  <!-- TikTok (doble tono cyan/rojo + negro) -->
-  <a href="https://tiktok.com/@TU_USUARIO" target="_blank" rel="noopener" aria-label="TikTok" class="soc tt" title="TikTok">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-      <!-- sombra cyan -->
-      <path fill="#00F2EA" d="M14.5 9.3v5.1a4.9 4.9 0 1 1-4.9-4.9 5 5 0 0 1 1.1.1v2.4a2.5 2.5 0 1 0 1.8 2.4V6.5h2a5.9 5.9 0 0 0 4.4 2v2a7.8 7.8 0 0 1-4.4-1.2Z"/>
-      <!-- sombra roja -->
-      <path fill="#FF004F" d="M14.5 8.5v5.1a4.9 4.9 0 1 1-4.9-4.9 5 5 0 0 1 1.1.1v2.4a2.5 2.5 0 1 0 1.8 2.4V5.7h2a5.9 5.9 0 0 0 4.4 2v2a7.8 7.8 0 0 1-4.4-1.2Z" opacity=".6"/>
-      <!-- forma principal en negro -->
-      <path fill="#111" d="M15.3 7.7a6.8 6.8 0 0 0 3.9 1.4v2.1a7.9 7.9 0 0 1-3.9-1.1v4.8a4.2 4.2 0 1 1-4.2-4.2c.4 0 .8 0 1.2.1v2.2a2.1 2.1 0 1 0 1.5 2V5.3h1.5c.1.9.4 1.7 1 2.4Z"/>
-    </svg>
-  </a>
-</div>
-
-
-
-      <a class="btn btn-outline" href="donaciones.html">Dons</a>
+      <a class="btn btn-outline" href="donaciones.html">Donaciones</a>
     </div>
   </nav>
 </header>
 
-<section class="hero"><div class="container hero-inner">
-  <div><span class="badge">Nouveau single · 2025</span>
-    <h1>Ambiance urbaine avec sa propre touche</h1>
-    <p class="lead">Je suis <strong>King Ghetto HT</strong>. Rap, drill et ghetto avec coeur. Ici, vous écoutez mes chansons, regardez mes vidéos et achetez mes <em>marchandise</em> officiel.</p>
-    <div class="cta"><a class="btn btn-primary" href="tienda.html">Aller au magasin</a><a class="btn btn-outline" href="#musica">Écoute maintenant</a></div>
-    <div class="audio-embed" style="margin-top:14px"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Reproductor de muestra"></iframe></div>
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="badge">Nuevo single · 2025</span>
+      <h1>Ambiente urbano con mi propia vibra</h1>
+      <p class="lead">
+        Soy <strong>King Ghetto HT</strong>. Rap, drill y barrio con corazón.
+        Aquí escuchas mis canciones, ves mis videos y compras mi <em>merch</em> oficial.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tienda.html">Ir a la tienda</a>
+        <a class="btn btn-outline" href="#musica">Escuchar ahora</a>
+      </div>
+      <div class="audio-embed" style="margin-top:14px">
+        <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Reproductor de muestra" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/product_1.jpg" alt="Merch destacado" style="width:100%;border-radius:12px"/>
+      <div class="cta" style="margin-top:12px">
+        <a class="btn btn-primary" href="tienda.html">Comprar productos</a>
+        <a class="btn btn-outline" href="#contacto">Reservar show</a>
+      </div>
+    </div>
   </div>
-  <div class="card"><img src="assets/product_1.jpg" alt="Merch destacado" style="width:100%;border-radius:12px"/>
-    <div class="cta"><a class="btn btn-primary" href="tienda.html">Acheter des produits</a><a class="btn btn-outline" href="#contacto">Reserve Show</a></div></div>
-</div></section>
-<section id="musica" class="section container"><h2>🎧 Musique</h2>
-  <div class="grid grid-3">
-    <div class="card"><div class="pad"><strong>Derniers sorties</strong><p class="muted">Agrega aquí tus embeds de Spotify / Apple Music / Audiomack.</p></div><div class="audio-embed"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Track 1"></iframe></div></div>
-    <div class="card"><div class="pad"><strong>Liste de lecture officielle</strong><p class="muted">Una lista que represente tu vibra.</p></div><div class="audio-embed"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Playlist"></iframe></div></div>
-    <div class="card"><div class="pad"><strong>Collaborations</strong><p class="muted">Destaca feats y remixes.</p></div><div class="audio-embed"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Collab"></iframe></div></div>
-  </div></section>
-<section id="videos" class="section container"><h2>🎬 Vidéos</h2>
-  <div class="grid grid-2"><div class="card video-embed"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video 1"></iframe></div>
-  <div class="card video-embed"><iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video 2"></iframe></div></div></section>
-<section id="galeria" class="section container"><h2>🖼️ Galerie</h2><div class="gallery"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></section>
-<section id="sobre-mi" class="section container about">
-  <div class="card"><img src="assets/product_4.jpg" alt="King Ghetto HT"/></div>
-  <div><h2>👑 Sobre mí</h2><p>Je suis né entre les rythmes afro et l'ambiance du quartier. Ma musique est un mélange <strong>rap</strong>, <strong>drill</strong> et des mélodies qui racontent mon histoire.</p>
-  <p>¿Vous souhaitez des réservations, de la presse ou des collaborations?</p><p><a class="btn btn-outline" href="#contacto">Parlons</a></p></div>
 </section>
-<section id="contacto" class="section container contact"><h2>📩Contact / Réservation</h2>
+
+<!-- Música -->
+<section id="musica" class="section container">
+  <h2>🎧 Música</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="pad">
+        <strong>Últimos lanzamientos</strong>
+        <p class="muted">Agrega aquí embeds de Spotify / Apple Music / Audiomack.</p>
+      </div>
+      <div class="audio-embed">
+        <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Track 1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="pad">
+        <strong>Playlist oficial</strong>
+        <p class="muted">Una lista que represente tu vibra.</p>
+      </div>
+      <div class="audio-embed">
+        <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Playlist" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="pad">
+        <strong>Colaboraciones</strong>
+        <p class="muted">Destaca feats y remixes.</p>
+      </div>
+      <div class="audio-embed">
+        <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Collab" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Videos -->
+<section id="videos" class="section container">
+  <h2>🎬 Videos</h2>
+  <div class="grid grid-2">
+    <div class="card video-embed">
+      <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video 1" allowfullscreen></iframe>
+    </div>
+    <div class="card video-embed">
+      <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Video 2" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Galería -->
+<section id="galeria" class="section container">
+  <h2>🖼️ Galería</h2>
+  <div class="gallery">
+    <div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+</section>
+
+<!-- Sobre mí -->
+<section id="sobre-mi" class="section container about">
+  <div class="card">
+    <img src="assets/product_4.jpg" alt="King Ghetto HT"/>
+  </div>
+  <div>
+    <h2>👑 Sobre mí</h2>
+    <p>Nací entre ritmos afro y el ambiente del barrio. Mi música mezcla <strong>rap</strong>, <strong>drill</strong> y melodías que cuentan mi historia.</p>
+    <p>¿Quieres reservar, prensa o colaboraciones?</p>
+    <p><a class="btn btn-outline" href="#contacto">Hablemos</a></p>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section container contact">
+  <h2>📩 Contacto / Reservas</h2>
   <form action="mailto:booking@kingghettoht.com" method="post" enctype="text/plain">
     <input class="input" name="nombre" placeholder="Tu nombre" required />
     <input class="input" type="email" name="email" placeholder="Tu email" required />
     <textarea class="input" name="mensaje" rows="5" placeholder="Dime sobre tu evento o propuesta" required></textarea>
-    <button class="btn btn-primary" type="submit">Envoyer</button>
-  </form></section>
-<footer><div class="container">
-  <div class="socials"><a href="#">YouTube</a><a href="#">Spotify</a><a href="#">Apple Music</a><a href="#">Instagram</a><a href="#">TikTok</a><a class="btn btn-primary" href="tienda.html">🛒 Magasin</a></div>
-  <div style="margin-top:12px"><small class="muted">© 2025 King Ghetto HT — Tous droits réservés.</small></div>
-</div></footer>
-<script src="js/main.js"></script></body></html>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="socials">
+      <a href="https://www.youtube.com/@kingghettoht">YouTube</a>
+      <a href="https://open.spotify.com/artist/6xxkSVzyG60vXNNEDb1piE?si=V0gJj1qrQXCx1PgCe54VKw">Spotify</a>
+      <a href="https://music.apple.com/do/artist/king-ghetto-ht/1830944929">Apple Music</a>
+      <a href="https://www.instagram.com/kingghettoht">Instagram</a>
+      <a href="https://www.tiktok.com/@kingghettoht">TikTok</a>
+      <a class="btn btn-primary" href="tienda.html">🛒 Tienda</a>
+    </div>
+    <div style="margin-top:12px">
+      <small class="muted">©️ 2025 King Ghetto HT — Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Script -->
+<script src="js/main.js"></script>
+</body>
+</html>
