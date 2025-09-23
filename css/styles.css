@@ -2,13 +2,8 @@
 *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--dark);color:#e9e9ee;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
 a{color:var(--accent);text-decoration:none}a:hover{opacity:.9}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
-.btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s}
-.btn-primary{background:var(--primary);color:#111}.btn-outline{border-color:var(--primary);color:var(--primary)}.btn:hover{transform:translateY(-1px)}
-header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.8);backdrop-filter:blur(10px);border-bottom:1px solid #1f1f29}
-.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:12px}.brand img{width:44px;height:44px}.brand .title{font-weight:900;letter-spacing:.5px}
-.nav-links{display:flex;gap:18px;align-items:center}.nav-links a{padding:8px 10px;border-radius:8px}.nav-toggle{display:none}
-/* Header socials — SIN tinte, respeta colores originales del icono */
+.btn{display:inline-block;padding:12px
+/* Header socials — sin tinte, respeta el color del SVG */
 .header-socials{
   display:flex;
   gap:10px;
@@ -18,42 +13,33 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.8);backdrop-fi
 
 .header-socials a{
   display:inline-flex;
-  width:28px;            /* puedes subir a 36/44 si quieres más grande */
+  width:28px;          /* sube a 36/44 si los quieres más grandes */
   height:28px;
   align-items:center;
   justify-content:center;
-  border:1px solid #2a2a36;   /* mantiene tu fondo/borde de abajo */
+  border:1px solid #2a2a36;  /* tu borde/fondo de abajo se queda */
   border-radius:8px;
   padding:4px;
-
-  /* — CLAVE — quita el “tinte” */
-  color: inherit !important;       /* no impongas color al SVG */
-  background: transparent;         /* sin overlay encima del icono */
+  background:transparent;     /* nada encima del icono */
+  color:inherit !important;   /* NO pintamos el SVG por color del link */
+  transition:transform .15s ease;
 }
+.header-socials a:hover{ transform:translateY(-1px); }
 
 .header-socials img,
 .header-socials svg{
-  width:18px;
+  width:18px;  /* sube a 20–24 si quieres más presencia */
   height:18px;
   display:block;
-
-  /* defensa por si hay estilos globales que tiñen */
-  filter: none !important;
-  mix-blend-mode: normal !important;
+  /* defensivo: elimina “suciedad” visual si hay estilos globales */
+  filter:none !important;
+  mix-blend-mode:normal !important;
 }
 
-/* NO aplicar fill desde CSS. Si en tu CSS tienes algo como:
+/* MUY IMPORTANTE:
+   Asegúrate de NO tener en otro lado algo como:
    .header-socials svg { fill: currentColor; }
-   elimínalo para que el icono use sus propios colores. */
-
-  /* defensa por si hay estilos globales que tiñen */
-  filter: none !important;
-  mix-blend-mode: normal !important;
-}
-
-/* NO aplicar fill desde CSS. Si en tu CSS tienes algo como:
-   .header-socials svg { fill: currentColor; }
-   elimínalo para que el icono use sus propios colores. */
+   Si existe, bórralo. Esa regla es la que “tiñe” el icono. */
 
 
 .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 20% -10%, rgba(78,161,255,.25), transparent), radial-gradient(1000px 600px at 80% 10%, rgba(245,197,66,.2), transparent)}
