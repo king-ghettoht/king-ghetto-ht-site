@@ -151,3 +151,30 @@ small.muted{color:#9b9bb0}
   /* Mostrar redes también en móvil (si prefieres ocultarlas, cambia a display:none) */
   .header-socials{display:flex}
 }
+/* Tamaño controlado para iframes de YouTube */
+:root { --video-max: 480px; }  /* ancho máx por defecto (ajústalo si quieres) */
+
+.audio-embed,
+.video-embed {
+  display: flex;
+  justify-content: center;      /* centra el iframe dentro del contenedor */
+}
+
+.audio-embed iframe,
+.video-embed iframe {
+  width: 100%;
+  max-width: var(--video-max);  /* límite de ancho global */
+  aspect-ratio: 16 / 9;         /* mantiene proporción 16:9 */
+  height: auto !important;      /* anula alturas fijas previas */
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Tamaños por clase (usa sm / md / lg en el HTML según necesites) */
+.audio-embed.sm iframe,
+.video-embed.sm iframe { max-width: 360px; }  /* pequeño */
+.audio-embed.md iframe,
+.video-embed.md iframe { max-width: 560px; }  /* mediano */
+.audio-embed.lg iframe,
+.video-embed.lg iframe { max-width: 720px; }  /* grande */
