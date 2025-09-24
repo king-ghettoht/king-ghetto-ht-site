@@ -151,3 +151,20 @@ small.muted{color:#9b9bb0}
   /* Mostrar redes también en móvil (si prefieres ocultarlas, cambia a display:none) */
   .header-socials{display:flex}
 }
+/* Tamaños controlados para iframes de YouTube */
+.embed { width: 100%; max-width: 480px; margin: 0 auto; }  /* tamaño por defecto */
+.embed-sm { max-width: 360px; }   /* pequeño */
+.embed-md { max-width: 560px; }   /* mediano */
+.embed-lg { max-width: 720px; }   /* grande */
+
+.embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* mantiene 16:9 de forma responsiva */
+  height: auto !important;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Si tu CSS tenía una altura fija para video (por ejemplo 160px), la anulamos: */
+.video-embed iframe { height: auto; }
