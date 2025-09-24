@@ -168,3 +168,32 @@ small.muted{color:#9b9bb0}
 
 /* Si tu CSS tenía una altura fija para video (por ejemplo 160px), la anulamos: */
 .video-embed iframe { height: auto; }
+/* Tamaño controlado para iframes de YouTube */
+:root {
+  --video-max: 480px; /* ← ajusta aquí el ancho máximo por defecto */
+}
+
+.audio-embed,
+.video-embed {
+  display: flex;
+  justify-content: center;     /* centra el iframe dentro de la tarjeta */
+}
+
+.audio-embed iframe,
+.video-embed iframe {
+  width: 100%;
+  max-width: var(--video-max); /* ← límite de ancho */
+  aspect-ratio: 16 / 9;        /* mantiene proporción 16:9 */
+  height: auto !important;     /* anula alturas fijas anteriores */
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Tamaños opcionales por clase (si quieres variar por sección) */
+.video-embed.sm iframe,
+.audio-embed.sm iframe { max-width: 360px; }  /* pequeño */
+.video-embed.md iframe,
+.audio-embed.md iframe { max-width: 560px; }  /* mediano */
+.video-embed.lg iframe,
+.audio-embed.lg iframe { max-width: 720px; }  /* grande */
