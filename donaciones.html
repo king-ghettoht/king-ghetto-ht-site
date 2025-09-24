@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Magasin — King Ghetto HT</title>
+  <title>Dons — King Ghetto HT</title>
 
   <link rel="icon" href="assets/favicon.png"/>
   <link rel="stylesheet" href="css/styles.css"/>
@@ -20,7 +20,6 @@
       <img src="assets/logo.svg" alt="King Ghetto HT logo" />
       <div class="title">King Ghetto HT</div>
     </div>
-
     <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
 
     <div id="navLinks" class="nav-links">
@@ -30,7 +29,7 @@
       <a href="noticias.html">Nouvelles</a>
       <a href="index.html#sobre-mi">Sur moi</a>
       <a href="index.html#contacto">Contact</a>
-      <a class="btn btn-primary" href="tienda.html">Magasin</a>
+      <a class="btn btn-primary" href="tienda.html">Boutique</a>
 
       <!-- Redes sociales con enlaces reales -->
       <div class="header-socials" aria-label="Redes">
@@ -46,63 +45,50 @@
   </nav>
 </header>
 
-<section class="section container">
-  <h2>🛒 Boutique officielle</h2>
-  <p class="muted">Paiements rapides par WhatsApp, PayPal ou virement bancaire. Livraison nationale et internationale disponible.</p>
+<section class="container donate-hero">
+  <h1>Soutenez ma musique 💛</h1>
+  <p class="lead">Vos contributions contribuent à la création de nouvelles chansons, de nouveaux clips et de nouveaux spectacles. Merci de contribuer au développement du projet!</p>
+</section>
 
-  <div class="grid grid-3" id="productos">
-    <article class="card">
-      <img src="assets/product_1.jpg" alt="Gorra Logo"/>
-      <div class="pad">
-        <h3>Capuchon Logo</h3>
-        <p class="muted">Édition limitée. Ajustable.</p>
-        <strong style="color:var(--primary)">$24.99</strong>
-        <div class="cta" style="margin-top:10px">
-          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Hola%20quiero%20la%20Gorra%20Logo%20King%20Ghetto%20HT">Acheter par WhatsApp</a>
-        </div>
+<section class="container section">
+  <div class="donate-grid">
+    <div class="donate-card">
+      <h3>PayPal</h3>
+      <p>Utilisez ce bouton PayPal sécurisé.</p>
+      <a class="btn btn-primary" href="https://www.paypal.com/paypalme/TuUsuario" target="_blank" rel="noopener">Faites un don avec PayPal</a>
+      <p class="muted" style="margin-top:8px">Reemplaza el enlace por tu <em>paypal.me</em>.</p>
+    </div>
+
+    <div class="donate-card">
+      <h3>Carte (Stripe)</h3>
+      <p>Pega tu enlace de <em>Stripe Checkout</em>.</p>
+      <a class="btn btn-primary" href="#" onclick="alert('Agrega tu URL de Stripe Checkout');return false;">Faire un don avec carte</a>
+    </div>
+
+    <div class="donate-card">
+      <h3>WhatsApp</h3>
+      <p>Coordonnez un don direct via WhatsApp.</p>
+      <a class="btn btn-primary" href="https://wa.me/000000000000?text=Hola%20quiero%20hacer%20una%20donación%20para%20King%20Ghetto%20HT">Écrivez sur WhatsApp</a>
+    </div>
+
+    <div class="donate-card">
+      <h3>Virement bancaire</h3>
+      <div class="bank">
+        <strong>Titulaire:</strong> King Ghetto HT<br>
+        <strong>Banque:</strong> Tu banco<br>
+        <strong>Cuenta:</strong> 000-0000000-0<br>
+        <strong>Moneda:</strong> DOP / HTG / USD
       </div>
-    </article>
+    </div>
 
-    <article class="card">
-      <img src="assets/product_2.jpg" alt="Camiseta Edición"/>
-      <div class="pad">
-        <h3>T-shirt édition</h3>
-        <p class="muted">S-XXL · Coton de qualité supérieure.</p>
-        <strong style="color:var(--primary)">$29.99</strong>
-        <div class="cta" style="margin-top:10px">
-          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Hola%20quiero%20la%20Camiseta%20King%20Ghetto%20HT">Acheter par WhatsApp</a>
-        </div>
-      </div>
-    </article>
+    <div class="donate-card">
+      <h3>QR (ejemplo)</h3>
+      <div class="qr">Sube tu assets/qr.png</div>
+    </div>
 
-    <article class="card">
-      <img src="assets/product_3.jpg" alt="Sticker Pack"/>
-      <div class="pad">
-        <h3>SPack téléscripteur</h3>
-        <p class="muted">Lot de 10 autocollants.</p>
-        <strong style="color:var(--primary)">$7.99</strong>
-        <div class="cta" style="margin-top:10px">
-          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Hola%20quiero%20el%20Sticker%20Pack%20King%20Ghetto%20HT">Acheter par WhatsApp</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="assets/product_4.jpg" alt="Sudadera King"/>
-      <div class="pad">
-        <h3>Sweatshirt à capuche King</h3>
-        <p class="muted">Unisexe · Sweat doux.</p>
-        <strong style="color:var(--primary)">$49.99</strong>
-        <div class="cta" style="margin-top:10px">
-          <a class="btn btn-primary" href="https://wa.me/000000000000?text=Hola%20quiero%20la%20Sudadera%20King%20Ghetto%20HT">Acheter par WhatsApp</a>
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <div class="card" style="margin-top:16px">
-    <div class="pad">
-      <p><strong>¿Boutique avancée?</strong> Conecta Shopify, WooCommerce o Printful. Esta versión rápida usa WhatsApp. Si ya tienes un enlace de pago, reemplázalo en los botones.</p>
+    <div class="donate-card">
+      <h3>Crypto (facultatif)</h3>
+      <p class="muted">Pega aquí tus direcciones (BTC, USDT, etc.) si las usas.</p>
     </div>
   </div>
 </section>
